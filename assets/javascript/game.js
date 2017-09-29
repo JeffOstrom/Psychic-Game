@@ -1,4 +1,4 @@
-// declarations Variables 
+// Declarations of available Variables options
 var wins = 0;
 var losses = 0;
 var letterGuessed = [];
@@ -12,7 +12,7 @@ function randomLetter(){
 	console.log()									
 	return letter[Math.floor((Math.random() * letter.length))];
 }
-// Resets onces used 10 chances and shoes guesses left
+// Resets onces used 10 chances and shows guesses left
 
 function restart(){
 	chances = 10;
@@ -24,7 +24,7 @@ function restart(){
 
 appLetter = randomLetter();
 console.log(appLetter);
-
+//When user presses key record 
 document.onkeyup = function(event){
 
 	userLetter = event.key.toUpperCase();
@@ -38,7 +38,7 @@ document.onkeyup = function(event){
 
 			chances--;
 			document.getElementById("guesses-left").innerHTML = chances;
-			
+			// If equal letter user wins!
 			if(appLetter === userLetter){
 
 				console.log("you win!!!");
@@ -47,14 +47,14 @@ document.onkeyup = function(event){
 				restart();
 			}
 			
-			// if lose
+			// If <1 1 user losses 
 			if(chances < 1){
 				losses++;
 				document.getElementById("losses").innerHTML = losses;
 				console.log("YOU LOsE");
 				restart();
 			}
-	}
+	} //sends notification to only enter letters
 	else{
 		alert("Please enter a letter only");
 	}		
