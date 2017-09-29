@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: white;
+  background: url("../images/hix.png");
+  width: 100%;
+
+}
+
+.auth-image { 
+	width: 75%;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Germania One', cursive;
+	font-size: 60px;
+	color: green;
+
+}
+
+header {
+	width: 75%;
+	text-align: center;;
+}
+
+.jumbotron {
+	background: url("../images/hix.png");
+	text-align: center;
+}

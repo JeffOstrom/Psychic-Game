@@ -4,14 +4,43 @@
 	<meta charset="utf-8">
 	<script src="assets/javascript/game.js"></script>
 	<title>The Psychic Game</title>
-	
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 	<header>
-		<h1>The Psychic Game</h1>
+		<div class="jumbotron">
+		  <img src="assets/images/orig.png" class="auth-image" alt="Psychic Image">
+		</div>
 	</header>
-
+	<!--Instructions Reference-->
 	<!-- layout for the Psychic game. Wins, Losses, Guesses Left, Your Guesses so far-->
+	<!-- 
+	-Wins: (# of times the user has guessed the letter correctly)
+	-Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+	-Guesses Left: (# of guesses left. This will update)
+	-Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
+	-When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+	-When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins)-->
+ <!--html layout-->
+ <h1> The Psychic Game</h1>
+ <h2> Guess what letter I'm thinking of!
+<h2>Wins: <span id="wins">0</span></h2>
+<h2>Losses: <span id="losses">0</span></h2>
+<h2>Guesses Left: <span id="guesses-left">10</span></h2>
+<h2>Your Guesses So Far: <span id="guesses"></span></h2>
+
+
   
 
 </body>
