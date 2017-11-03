@@ -19,8 +19,6 @@ Built With
 
 - CSS3
 
-- Bootstrap 3.3.7
-
 - Javascript
 
 Resources
