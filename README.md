@@ -1,7 +1,7 @@
 Synopsis
 -------------------------------------------------------------------------------------
 
-- Guess what letter I'm thinking of? 
+- Guess what letter I'm thinking of??
 
 - Wins: (# of times the user has guessed the letter correctly)
 
