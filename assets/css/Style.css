@@ -6,7 +6,7 @@ body {
 	text-align: center;
 	font-family: 'Nosifer', cursive;
 	color:black;
-	background: #E1CBC9;
+	background: #D0CFCF;
 	}	
 
 .row{ 
@@ -39,5 +39,5 @@ h2 {
 .navbar{
 	text-align: center;
 	padding-top: 15px;
-	background-color: #EEEEEE;
+	background-color: #FCFCFC;
 	}
