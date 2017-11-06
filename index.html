@@ -7,31 +7,38 @@
 	<!--left bootstrap out-->
 	<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
 
+	 <!-- Bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Nosifer|Patua+One" rel="stylesheet">
+	<!--css link-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<header>
+	
 		<!--background image-->
-		<div>
-		  <img src="assets/images/orig.png" class="auth-image" alt="Psychic Image">
+	<div class="jumbotron">
+		<h1> The Psychic Game</h1>
+	</div>
+	<!--Main intructiona and responses-->
+	<div class="row">
+		<div class="col-xs-8">
+			<h2> Guess what letter I'm thinking of!</h2>
+			<h2>Wins: <span id="wins">0</span></h2>
+			<h2>Losses: <span id="losses">0</span></h2>
+			<h2>Guesses Left: <span id="guesses-left">10</span></h2>
+			<h2>Your Guesses So Far: <span id="guesses"></span></h2>
 		</div>
-	</header>
-	<!--Instructions Reference-->
-	<!-- layout for the Psychic game. Wins, Losses, Guesses Left, Your Guesses so far-->
-	<!-- 
-	-Wins: (# of times the user has guessed the letter correctly)
-	-Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
-	-Guesses Left: (# of guesses left. This will update)
-	-Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-	-When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-	-When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins)-->
- <!--html layout-->
- <h1> The Psychic Game</h1>
- <h2> Guess what letter I'm thinking of!
-<h2>Wins: <span id="wins">0</span></h2>
-<h2>Losses: <span id="losses">0</span></h2>
-<h2>Guesses Left: <span id="guesses-left">10</span></h2>
-<h2>Your Guesses So Far: <span id="guesses"></span></h2>
+	</div>
+
+ 	<!--Footer-->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+	  <div class="container">
+	    <p>Copyright &copy; 2017 Jeffrey Ostrom</p>
+	  </div>
+	</nav>
+
 
 <!--Js link-->
  <script src="assets/javascript/game.js"></script>

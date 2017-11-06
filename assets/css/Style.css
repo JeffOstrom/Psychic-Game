@@ -1,27 +1,44 @@
 body {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: white;
-  background: url("../images/hix.png");
-  width: 100%;
+	 background: url("../Images/clouds.jpg");
 
-}
+	}
 
-.auth-image { 
-	width: 65%;
+.jumbotron{
 	text-align: center;
-}
+	font-family: 'Nosifer', cursive;
+	color:#CF1E09;
+	background: #E1CBC9;
+	}	
 
-h1 {
-	font-family: 'Germania One', cursive;
-	font-size: 60px;
-	color: green;
+.row{ 
+	margin: 20px;
+ 
+	}
 
-}
+h2 {
+	color:#E46051;
+	font-size: 38px;
+	font-family: 'Patua One', cursive;
+	}
 
-header {
-	
+#wins{
+	color:white;
+	}
+
+#losses{
+	color:white;
+	}
+
+#guesses-left{
+	color:white;
+	}
+
+#guesses{
+	color:white;
+	}
+
+.navbar{
 	text-align: center;
-}
-
+	padding-top: 15px;
+	background-color: #EEEEEE;
+	}
